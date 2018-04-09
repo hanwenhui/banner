@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播</title>
+    <link rel="stylesheet" href="css/lunbo.css">
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/lunbo.js"></script>
+</head>
+<div id="wrap">
+    <div class="pic">
+        <ul>
+            <li>
+                <img src="image/1.jpg" alt=""/>
+            </li>
+            <li>
+                <img src="image/2.jpg" alt=""/>
+            </li>
+            <li>
+                <img src="image/3.jpg" alt=""/>
+            </li>
+            <li>
+                <img src="image/4.jpg" alt=""/>
+            </li>
+        </ul>
+    </div>
+    <div class="circle">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="btn">
+        <div class='prev'><</div>
+        <div class='next'>></div>
+    </div>
+</div>
+<body>
+<script>
+//    轮播
+     var picJson = {
+     "btn": "true",
+     "circle": "true",
+     "circleDom": $(".circle ul li "),
+     "prevBtn": $(".prev"),
+     "nextBtn": $(".next"),
+      "slideType": "fade",
+     "intervalTime": 2000,
+     "domEvent": ['mouseover', 'mouseout']
+     };
+     $(".pic ul li ").slide(picJson);
+
+//    无缝滚动
+/*    var picJson = {
+        "btn": "false",
+        "circle": "false",
+        "circleDom": $(".circle ul li "),
+        "prevBtn": $(".prev"),
+        "nextBtn": $(".next"),
+        "slideType": "scroll",
+        "intervalTime": 20,
+        "domEvent": ['mouseover', 'mouseout']
+    };
+    $(".pic ul li ").slide(picJson);*/
+
+</script>
+</body>
+</html>
