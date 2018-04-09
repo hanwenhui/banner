@@ -39,31 +39,30 @@
 </div>
 <body>
 <script>
-//    轮播
-     var picJson = {
-     "btn": "true",
-     "circle": "true",
-     "circleDom": $(".circle ul li "),
-     "prevBtn": $(".prev"),
-     "nextBtn": $(".next"),
-      "slideType": "fade",
-     "intervalTime": 2000,
-     "domEvent": ['mouseover', 'mouseout']
-     };
-     $(".pic ul li ").slide(picJson);
-
-//    无缝滚动
-/*    var picJson = {
-        "btn": "false",
-        "circle": "false",
+    //    轮播
+    var picJson = {
+        "btn": "true",
+        "circle": "true",
         "circleDom": $(".circle ul li "),
         "prevBtn": $(".prev"),
         "nextBtn": $(".next"),
-        "slideType": "scroll",
-        "intervalTime": 20,
-        "domEvent": ['mouseover', 'mouseout']
+        "slideType": "fade",
+        "intervalTime": 2000,
+        "domEvent": ['click', 'mouseout']
     };
-    $(".pic ul li ").slide(picJson);*/
+    $(".pic ul li ").slide(picJson);
+    //    无缝滚动
+    /*    var picJson = {
+            "btn": "false",
+            "circle": "false",
+            "circleDom": $(".circle ul li "),
+            "prevBtn": $(".prev"),
+            "nextBtn": $(".next"),
+            "slideType": "scroll",
+            "intervalTime": 20,
+            "domEvent": ['mouseover', 'mouseout']
+        };
+        $(".pic ul li ").slide(picJson);*/
 
 </script>
 </body>

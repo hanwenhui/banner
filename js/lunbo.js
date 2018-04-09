@@ -1,30 +1,47 @@
 /**
  * Created by hy on 2018/4/9.
  */
+
+/*function A() {
+console.log('A',this);
+}
+
+A.prototype.Test = function (e) {
+    this.A = e;
+    console.log('Test', this);
+}
+var B = new A();
+B.Test(1);
+var C= new A();
+C.Test();*/
+
 $.fn.extend({
-    slide: function (option) {
+    Hslide: function (option) {
+
         var _this = this;
+        this.circle(0);
         let DOM = $(_this);
         let _option = option;
         switch (_option.slideType) {
             case "fade":
                 let circleDom = _option.circleDom;
                 var i = 0;
-                circleDom.eq(i).addClass('current');
+                // circleDom.eq(i).addClass('current');
+
                 // 下一张
             function nextImg() {
                 i++;
                 i = i > DOM.length - 1 ? 0 : i;
-                circleDom.eq(i).addClass('current').siblings().removeClass("current");
+                _this.circle(i);
 //                    console.log("img:", i);
                 DOM.eq(i).fadeIn(500).siblings().fadeOut(500);
             }
 
-            //上一张
+                //上一张
             function prevImg() {
                 i--;
                 i = i < 0 ? DOM.length - 1 : i;
-                circleDom.eq(i).addClass('current').siblings().removeClass("current");
+                _this.circle(i);
                 DOM.eq(i).fadeIn(500).siblings().fadeOut(500);
             }
 
@@ -92,6 +109,7 @@ $.fn.extend({
                     oUl.css('left', '+=' + speed + 'px');
                 }
             }
+
                 clearInterval(timer1);
                 var timer1 = setInterval(slider, _option.intervalTime);
                 DOM[option.domEvent[0]](function () {
@@ -104,6 +122,9 @@ $.fn.extend({
             default:
                 console.log(error);
         }
+    },
+    circle: function (i) {
+        $(this).closest('#wrap').find('.circle ul li').eq(i).addClass('current').siblings().removeClass("current");
+        console.log('我是test', i);
     }
-
 });
