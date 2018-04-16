@@ -9,6 +9,38 @@
 </head>
 
 <body>
+<!--<div class="wrap">
+    <div class="pic">
+        <ul>
+            <li>
+                <img src="image/1.jpg" alt=""/>
+            </li>
+            <li>
+                <img src="image/2.jpg" alt=""/>
+            </li>
+            <li>
+                <img src="image/3.jpg" alt=""/>
+            </li>
+            <li>
+                <img src="image/4.jpg" alt=""/>
+            </li>
+        </ul>
+    </div>
+    <div class="circle">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="btn">
+        <div class='prev'><</div>
+        <div class='next'>></div>
+    </div>
+</div>
+</div>-->
+
 <div class="wrap">
     <div class="pic">
         <ul>
@@ -39,6 +71,7 @@
         <div class='next'>></div>
     </div>
 </div>
+</div>
 <script>
     var picJson = {
         //是否显示左右箭头按钮
@@ -50,9 +83,21 @@
         //淡入淡出
 //        "slideType": "fade",
         //无缝
-        "slideType": "scroll"
+        "slideType": "fade"
     };
-    $(".wrap").Hinit(picJson);
+//    $(".wrap:eq(0)").Hinit(picJson);
+    $(".wrap:eq(0)").Hinit({
+        //是否显示左右箭头按钮
+//        "btn": "false",
+//        是否自动轮播
+        "autoPlay": "false",
+//        轮播时间
+//        "intervalTime": 2000,
+        //淡入淡出
+//        "slideType": "fade",
+        //无缝
+        "slideType": "scroll"
+    });
 
 </script>
 

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae78d6c-c0d0-432a-896b-be5b35c011db" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/lunbo.css" afterPath="$PROJECT_DIR$/css/lunbo.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lunbo.js" afterPath="$PROJECT_DIR$/js/lunbo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lunbo.html" afterPath="$PROJECT_DIR$/lunbo.html" />
     </list>
@@ -17,13 +18,52 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="lunbo面向对象.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lunbo面向对象.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="lunbo.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/lunbo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-110">
+              <caret line="190" column="31" lean-forward="true" selection-start-line="190" selection-start-column="31" selection-end-line="190" selection-end-column="31" />
+              <folding>
+                <element signature="e#39#222#0" expanded="false" />
+                <element signature="e#376#591#0" expanded="false" />
+                <element signature="e#409#545#0" expanded="false" />
+                <element signature="e#638#1845#0" expanded="false" />
+                <element signature="e#889#1101#0" expanded="false" />
+                <element signature="e#1184#1235#0" expanded="false" />
+                <element signature="e#1241#1366#0" expanded="false" />
+                <element signature="e#1457#1689#0" expanded="false" />
+                <element signature="e#1695#1742#0" expanded="false" />
+                <element signature="e#1883#2700#0" expanded="false" />
+                <element signature="e#2021#2658#0" expanded="false" />
+                <element signature="e#2060#2219#0" expanded="false" />
+                <element signature="e#2232#2586#0" expanded="false" />
+                <element signature="e#2293#2409#0" expanded="false" />
+                <element signature="e#2460#2516#0" expanded="false" />
+                <element signature="e#2599#2648#0" expanded="false" />
+                <element signature="e#2737#3510#0" expanded="false" />
+                <element signature="e#2829#3469#0" expanded="false" />
+                <element signature="e#2868#2980#0" expanded="false" />
+                <element signature="e#2993#3397#0" expanded="false" />
+                <element signature="e#3047#3220#0" expanded="false" />
+                <element signature="e#3271#3327#0" expanded="false" />
+                <element signature="e#3410#3459#0" expanded="false" />
+                <element signature="e#3558#3742#0" expanded="false" />
+                <element signature="e#3664#3735#0" expanded="false" />
+                <element signature="e#3790#3975#0" expanded="false" />
+                <element signature="e#3896#3968#0" expanded="false" />
+                <element signature="e#4020#4159#0" expanded="false" />
+                <element signature="e#4206#4854#0" expanded="false" />
+                <element signature="e#4316#4817#0" expanded="false" />
+                <element signature="e#4451#4807#0" expanded="false" />
+                <element signature="e#4494#4586#0" expanded="false" />
+                <element signature="e#4603#4697#0" expanded="false" />
+                <element signature="e#4714#4793#0" expanded="false" />
+                <element signature="e#4902#4987#0" expanded="false" />
+                <element signature="e#5520#5563#0" expanded="false" />
+                <element signature="e#5635#5763#0" expanded="false" />
+                <element signature="e#5700#5756#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,22 +71,32 @@
       <file leaf-file-name="lunbo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lunbo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="17" />
+            <state relative-caret-position="-1870">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="41" selection-end-column="9" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lunbo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/lunbo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-110">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lunbo.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/lunbo.js">
+      <file leaf-file-name="jquery.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="55">
+              <caret line="0" column="120" lean-forward="true" selection-start-line="0" selection-start-column="120" selection-end-line="0" selection-end-column="120" />
               <folding>
-                <element signature="e#628#854#0" expanded="false" />
-                <element signature="e#1188#1245#0" expanded="false" />
-                <element signature="e#1307#1410#0" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,6 +108,7 @@
     <findStrings>
       <find>nextImg</find>
       <find>test</find>
+      <find>HfadeToggle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,6 +118,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lunbo.html" />
+        <option value="$PROJECT_DIR$/css/lunbo.css" />
         <option value="$PROJECT_DIR$/js/lunbo.js" />
       </list>
     </option>
@@ -78,8 +130,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="235" />
-    <option name="y" value="-10" />
+    <option name="x" value="305" />
+    <option name="y" value="-11" />
     <option name="width" value="976" />
     <option name="height" value="1048" />
   </component>
@@ -98,13 +150,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="banner" type="b2602c69:ProjectViewProjectNode" />
               <item name="banner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="banner" type="b2602c69:ProjectViewProjectNode" />
+              <item name="banner" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="banner" type="b2602c69:ProjectViewProjectNode" />
@@ -116,6 +172,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,12 +201,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523253477698</updated>
-      <workItem from="1523253479048" duration="5766000" />
+      <workItem from="1523253479048" duration="6361000" />
+      <workItem from="1523857823123" duration="4694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5766000" />
+    <option name="totallyTimeSpent" value="11055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -157,19 +215,19 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12328767" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -196,20 +254,140 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lunbo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
+        <state relative-caret-position="2750">
           <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lunbo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="2200">
           <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="28" />
           <folding>
-            <element signature="e#628#854#0" expanded="false" />
-            <element signature="e#1188#1245#0" expanded="false" />
-            <element signature="e#1307#1410#0" expanded="false" />
+            <element signature="e#39#222#0" expanded="false" />
+            <element signature="e#376#591#0" expanded="false" />
+            <element signature="e#409#545#0" expanded="false" />
+            <element signature="e#638#1845#0" expanded="false" />
+            <element signature="e#889#1101#0" expanded="false" />
+            <element signature="e#1184#1235#0" expanded="false" />
+            <element signature="e#1241#1366#0" expanded="false" />
+            <element signature="e#1457#1689#0" expanded="false" />
+            <element signature="e#1695#1742#0" expanded="false" />
+            <element signature="e#1883#2700#0" expanded="false" />
+            <element signature="e#2021#2658#0" expanded="false" />
+            <element signature="e#2060#2219#0" expanded="false" />
+            <element signature="e#2232#2586#0" expanded="false" />
+            <element signature="e#2293#2409#0" expanded="false" />
+            <element signature="e#2460#2516#0" expanded="false" />
+            <element signature="e#2599#2648#0" expanded="false" />
+            <element signature="e#2737#3510#0" expanded="false" />
+            <element signature="e#2829#3469#0" expanded="false" />
+            <element signature="e#2868#2980#0" expanded="false" />
+            <element signature="e#2993#3397#0" expanded="false" />
+            <element signature="e#3047#3220#0" expanded="false" />
+            <element signature="e#3271#3327#0" expanded="false" />
+            <element signature="e#3410#3459#0" expanded="false" />
+            <element signature="e#3558#3742#0" expanded="false" />
+            <element signature="e#3664#3735#0" expanded="false" />
+            <element signature="e#3790#3975#0" expanded="false" />
+            <element signature="e#3896#3968#0" expanded="false" />
+            <element signature="e#4020#4159#0" expanded="false" />
+            <element signature="e#4206#4854#0" expanded="false" />
+            <element signature="e#4316#4817#0" expanded="false" />
+            <element signature="e#4451#4807#0" expanded="false" />
+            <element signature="e#4494#4586#0" expanded="false" />
+            <element signature="e#4603#4697#0" expanded="false" />
+            <element signature="e#4714#4793#0" expanded="false" />
+            <element signature="e#4902#4987#0" expanded="false" />
+            <element signature="e#5520#5563#0" expanded="false" />
+            <element signature="e#5635#5763#0" expanded="false" />
+            <element signature="e#5700#5756#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lunbo面向对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="0" column="120" lean-forward="true" selection-start-line="0" selection-start-column="120" selection-end-line="0" selection-end-column="120" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/lunbo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lunbo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1870">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="41" selection-end-column="9" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lunbo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="190" column="31" lean-forward="true" selection-start-line="190" selection-start-column="31" selection-end-line="190" selection-end-column="31" />
+          <folding>
+            <element signature="e#39#222#0" expanded="false" />
+            <element signature="e#376#591#0" expanded="false" />
+            <element signature="e#409#545#0" expanded="false" />
+            <element signature="e#638#1845#0" expanded="false" />
+            <element signature="e#889#1101#0" expanded="false" />
+            <element signature="e#1184#1235#0" expanded="false" />
+            <element signature="e#1241#1366#0" expanded="false" />
+            <element signature="e#1457#1689#0" expanded="false" />
+            <element signature="e#1695#1742#0" expanded="false" />
+            <element signature="e#1883#2700#0" expanded="false" />
+            <element signature="e#2021#2658#0" expanded="false" />
+            <element signature="e#2060#2219#0" expanded="false" />
+            <element signature="e#2232#2586#0" expanded="false" />
+            <element signature="e#2293#2409#0" expanded="false" />
+            <element signature="e#2460#2516#0" expanded="false" />
+            <element signature="e#2599#2648#0" expanded="false" />
+            <element signature="e#2737#3510#0" expanded="false" />
+            <element signature="e#2829#3469#0" expanded="false" />
+            <element signature="e#2868#2980#0" expanded="false" />
+            <element signature="e#2993#3397#0" expanded="false" />
+            <element signature="e#3047#3220#0" expanded="false" />
+            <element signature="e#3271#3327#0" expanded="false" />
+            <element signature="e#3410#3459#0" expanded="false" />
+            <element signature="e#3558#3742#0" expanded="false" />
+            <element signature="e#3664#3735#0" expanded="false" />
+            <element signature="e#3790#3975#0" expanded="false" />
+            <element signature="e#3896#3968#0" expanded="false" />
+            <element signature="e#4020#4159#0" expanded="false" />
+            <element signature="e#4206#4854#0" expanded="false" />
+            <element signature="e#4316#4817#0" expanded="false" />
+            <element signature="e#4451#4807#0" expanded="false" />
+            <element signature="e#4494#4586#0" expanded="false" />
+            <element signature="e#4603#4697#0" expanded="false" />
+            <element signature="e#4714#4793#0" expanded="false" />
+            <element signature="e#4902#4987#0" expanded="false" />
+            <element signature="e#5520#5563#0" expanded="false" />
+            <element signature="e#5635#5763#0" expanded="false" />
+            <element signature="e#5700#5756#0" expanded="false" />
           </folding>
         </state>
       </provider>

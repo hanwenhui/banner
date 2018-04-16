@@ -89,7 +89,6 @@ $.fn.extend({
         switch (this.HslideType) {
             case 'fade':
                 this.Hindex = this.Hindex > HliLength - 1 ? 0 : this.Hindex;
-                this.Hcircle(this.Hindex);
                 this.HfadeToggle(this.Hindex);
                 break;
             case 'scroll':
@@ -100,12 +99,13 @@ $.fn.extend({
                 if (this.Hindex == HliLength - 1) {
                     this.Hcircle(0);
                 }
-                this.Hcircle(this.Hindex);
                 this.HscrollMove(this.Hindex);
                 break;
             default:
                 console.log('下一张error');
         }
+        this.Hcircle(this.Hindex);
+
     },
 
     // 上一张
@@ -115,8 +115,6 @@ $.fn.extend({
         switch (this.HslideType) {
             case 'fade':
                 this.Hindex = this.Hindex < 0 ? HliLength - 1 : this.Hindex;
-                this.Hcircle(this.Hindex);
-                this.HfadeToggle(this.Hindex);
                 break;
             case 'scroll':
                 if (this.Hindex == -1) {
@@ -126,13 +124,12 @@ $.fn.extend({
                 if (this.Hindex == HliLength - 1) {
                     this.Hcircle(0);
                 }
-                this.Hcircle(this.Hindex);
                 this.HscrollMove(this.Hindex);
                 break;
             default:
                 console.log('下一张error');
         }
-
+        this.Hcircle(this.Hindex);
     },
 
     // 点击箭头切换下一张
@@ -166,28 +163,22 @@ $.fn.extend({
     HcircleEvent: function () {
         var _this = this;
         var circle = $(this).find('.circle li');
-        switch (this.HslideType) {
-            case 'fade':
-                circle.click(function () {
-                    _this.HclearTimer();
-                    _this.Hcircle($(this).index());
-                    _this.Hindex = $(this).index();
+        circle.click(function () {
+            _this.HclearTimer();
+            _this.Hcircle($(this).index());
+            _this.Hindex = $(this).index();
+            switch (this.HslideType) {
+                case 'fade':
                     _this.HfadeToggle(_this.Hindex);
-                });
-
-                break;
-            case 'scroll':
-                circle.click(function () {
-                    _this.HclearTimer();
-                    _this.Hcircle($(this).index());
-                    _this.Hindex = $(this).index();
+                    break;
+                case 'scroll':
                     _this.HscrollMove(_this.Hindex);
-                });
-
-                break;
-            default:
-                console.log('圆点error');
-        }
+                    break;
+                default:
+                    console.log('圆点error');
+                    break;
+            }
+        });
         console.log(circle);
     },
 
