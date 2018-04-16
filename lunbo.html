@@ -7,7 +7,9 @@
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/lunbo.js"></script>
 </head>
-<div id="wrap">
+
+<body>
+<div class="wrap">
     <div class="pic">
         <ul>
             <li>
@@ -37,33 +39,22 @@
         <div class='next'>></div>
     </div>
 </div>
-<body>
 <script>
-    //    轮播
     var picJson = {
-        "btn": "true",
-        "circle": "true",
-        "circleDom": $(".circle ul li "),
-        "prevBtn": $(".prev"),
-        "nextBtn": $(".next"),
-        "slideType": "fade",
-        "intervalTime": 2000,
-        "domEvent": ['click', 'mouseout']
+        //是否显示左右箭头按钮
+//        "btn": "false",
+//        是否自动轮播
+//        "autoPlay":"false",
+//        轮播时间
+//        "intervalTime": 2000,
+        //淡入淡出
+//        "slideType": "fade",
+        //无缝
+        "slideType": "scroll"
     };
-    $(".pic ul li ").slide(picJson);
-    //    无缝滚动
-    /*    var picJson = {
-            "btn": "false",
-            "circle": "false",
-            "circleDom": $(".circle ul li "),
-            "prevBtn": $(".prev"),
-            "nextBtn": $(".next"),
-            "slideType": "scroll",
-            "intervalTime": 20,
-            "domEvent": ['mouseover', 'mouseout']
-        };
-        $(".pic ul li ").slide(picJson);*/
+    $(".wrap").Hinit(picJson);
 
 </script>
+
 </body>
 </html>
