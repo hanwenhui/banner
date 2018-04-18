@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/lunbo.css">
     <script src="js/jquery-3.2.0.min.js"></script>
     <script src="js/lunbo.js"></script>
+    <!--<script src="js/lun.js"></script>-->
 </head>
 
 <body>
@@ -27,16 +28,16 @@
         </ul>
     </div>
     <div class="circle">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <!-- <ul>
+           - <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+        </ul>-->
     </div>
     <div class="btn">
-        <div class='prev'><</div>
-        <div class='next'>></div>
+        <!--<div class='prev'><</div>
+        <div class='next'>></div>-->
     </div>
 </div>
 <script>
@@ -44,15 +45,17 @@
         //是否显示左右箭头按钮
 //        "btn": "false",
 //        是否自动轮播
-//        "autoPlay":"false",
+//        "autoPlay":"true",
 //        轮播时间
-//        "intervalTime": 2000,
+        "intervalTime": 5000,
         //淡入淡出
 //        "slideType": "fade",
         //无缝
-        "slideType": "scroll"
+//        "slideType": "scroll",
+        // Hzoom(移走上一张露出下一张)
+        "slideType": "zoom"
     };
-    $(".wrap").Hinit(picJson);
+    $(".wrap").Hbanner(picJson);
 
 </script>
 
