@@ -6,7 +6,7 @@
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    -o-user-select:none;
+    -o-user-select: none;
     -moz-user-select: none;
 }
 
@@ -24,47 +24,82 @@
     overflow: hidden;
 }
 
-/*.pic ul li img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}*/
-.pic ul {
-    /*position: relative;*/
+.pic .ulRelative {
+    position: relative;
     height: 360px;
 }
 
-.pic ul li {
+.pic .ulRelative li {
     width: 500px;
     height: 360px;
     float: left;
     /*position: absolute;*/
 }
 
+.pic .ulRelative li:nth-child(1) img {
+    z-index: 1;
+}
+
 .pic ul li img {
     width: 100%;
     height: 100%;
 }
-.pic ul li{
+
+/*图片移除后露出下一张*/
+.pic .ulNoRelative {
+    display: block;
+    height: 360px;
+}
+
+.pic .ulNoRelative li {
+    width: 500px;
+    height: 360px;
+    position: absolute;
     -webkit-transition: 0.7s;
     -moz-transition: 0.7s;
     -o-transition: 0.7s;
+    z-index: 0;
+
 }
 
-.pic ul li:nth-child(1) img {
-    z-index: 1;
+/*z-index 第二高*/
+.pic .ulNoRelative .secondZindex {
+    z-index: 3;
 }
-.zoom{
-    position:absolute;
-    -moz-transform:translate(-150px,-120px);
-    -webkit-transform:scale(1.1) translate(-150px,-120px) skew(15deg,-30deg);
-    -ms-transform:scale(1.1) translate(-150px,-120px) skew(15deg,-30deg);
-    -o-transform:scale(1.1) translate(-150px,-120px) skew(15deg,-30deg);
+
+/*z-index 最高*/
+.pic .ulNoRelative .topZindex {
+    z-index: 4;
+
 }
+
+@keyframes zoomOutLeft {
+    from {
+        opacity: 1;
+        left: 0;
+    }
+
+    to {
+        opacity: 0;
+        left: -50%;
+    }
+}
+
+.zoomOutLeft {
+    animation: zoomOutLeft 2s;
+    animation-fill-mode: forwards;
+}
+
+.zoom {
+    /*position:absolute;*/
+    -moz-transform: translate(-150px, -120px);
+    -webkit-transform: scale(1.1) translate(-150px, -120px) skew(15deg, -30deg);
+    -ms-transform: scale(1.1) translate(-150px, -120px) skew(15deg, -30deg);
+    -o-transform: scale(1.1) translate(-150px, -120px) skew(15deg, -30deg);
+}
+
 .circle {
-    z-index: 2;
+    z-index: 999;
     width: 105px;
     height: 10px;
     position: absolute;
@@ -89,7 +124,7 @@
 }
 
 .btn div {
-    z-index: 2;
+    z-index: 999;
     width: 40px;
     height: 40px;
     position: absolute;

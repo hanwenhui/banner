@@ -25,6 +25,9 @@
             <li>
                 <img src="image/4.jpg" alt=""/>
             </li>
+            <li>
+                <img src="image/5.jpg" alt=""/>
+            </li>
         </ul>
     </div>
     <div class="circle">
@@ -44,16 +47,22 @@
     var picJson = {
         //是否显示左右箭头按钮
 //        "btn": "false",
+
 //        是否自动轮播
-//        "autoPlay":"true",
+        "autoPlay":"false",
+
 //        轮播时间
-        "intervalTime": 5000,
+        "intervalTime": 2000,
+
         //淡入淡出
 //        "slideType": "fade",
-        //无缝
+
+        // 无缝
 //        "slideType": "scroll",
-        // Hzoom(移走上一张露出下一张)
+
+//        // 飘出     (移走上一张露出下一张)
         "slideType": "zoom"
+
     };
     $(".wrap").Hbanner(picJson);
 

@@ -18,7 +18,7 @@
 $.fn.extend({
     O: {
         //索引值
-        "Hindex": 3,
+        "Hindex": 0,
         "HUl": "",
         "HLi": "",
         "HLiLength": "",
@@ -65,8 +65,8 @@ $.fn.extend({
         // 判断如果是zoom模式   修改ul的布局
         if (this.O.HslideType == "zoom") {
             this.O.HUl.addClass('ulNoRelative');
-            this.O.HLi.eq(3).addClass('topZindex');
-            this.O.HLi.eq(0).addClass('secondZindex');
+            this.O.HLi.eq(0).addClass('topZindex');
+            this.O.HLi.eq(1).addClass('secondZindex');
         } else {
             this.O.HUl.removeClass('ulNoRelative').addClass('ulRelative');
         }
@@ -104,7 +104,7 @@ $.fn.extend({
         }
 
         // 给第一个圆点添加 选中状态
-        this.Hcircle(3);
+        this.Hcircle(0);
 
         //圆点点击事件
         this.HcircleEvent()
@@ -154,17 +154,14 @@ $.fn.extend({
             case 'zoom':
                 console.log('-----------', this.O.Hindex);
                 var zoomIndex = (this.O.Hindex) % 4;
-                this.O.Hindex = zoomIndex;
                 console.log("ccc", this.O.Hindex);
                 console.log("dddd", zoomIndex);
                 if (zoomIndex === -1) {
                     this.O.Hindex = this.O.HLiLength - 1;
                     this.Hzoom(0, this.O.HLiLength - 1, this.O.HLiLength - 2);
-                    break;
                 }
                 if (zoomIndex === 0) {
                     console.log(zoomIndex + 1, zoomIndex, this.O.HLiLength - 1);
-                    break;
                 }
                 this.Hzoom(zoomIndex + 1, zoomIndex, zoomIndex - 1);
                 break;
@@ -196,17 +193,20 @@ $.fn.extend({
                 break;
             case 'zoom':
                 var zoomIndex = (this.O.Hindex) % this.O.HLiLength;
-                this.O.Hindex = zoomIndex;
+
                 if (zoomIndex === this.O.HLiLength - 1) {
                     // debugger
                     this.Hzoom(zoomIndex - 1, zoomIndex, 0);
-                    break
+                    this.O.Hindex = zoomIndex;
+                    // return false
                 }
                 if (zoomIndex === 0) {
                     this.Hzoom(this.O.HLiLength - 1, zoomIndex, zoomIndex + 1);
-                    break
+                    this.O.Hindex = zoomIndex;
+                    // return false
                 }
                 this.Hzoom(zoomIndex - 1, zoomIndex, zoomIndex + 1);
+                this.O.Hindex = zoomIndex;
                 console.log("aaaa", this.O.Hindex);
                 console.log("bbbb", zoomIndex);
                 break;
@@ -229,8 +229,6 @@ $.fn.extend({
     HcircleEvent: function () {
         var _this = this;
         var circle = $(this).find('.circle li');
-        var B = this.O.Hindex;
-        console.log(99999999999,B)
         circle.click(function () {
             _this.HclearTimer();
             _this.Hcircle($(this).index());
@@ -243,50 +241,17 @@ $.fn.extend({
                     _this.Hscroll(_this.O.Hindex);
                     break;
                 case 'zoom':
-                    //如果当前点击与之前记录相等  代表连续
-                    if (_this.O.Hindex - 1 === B) {
-                        // 最后一个
-                        if (_this.O.Hindex >= _this.O.HLiLength - 1) {
-                            _this.Hzoom(_this.O.Hindex - 1, _this.O.Hindex, 0);
-                            break
-                        }
-                        //第一个
-                        if (_this.O.Hindex <= 0) {
-                            _this.Hzoom(_this.O.HLiLength - 1, _this.O.Hindex, _this.O.Hindex + 1);
-                            break
-                        }
-                        //其他所有
-                        _this.Hzoom(_this.O.Hindex - 1, _this.O.Hindex, _this.O.Hindex + 1);
-// debugger
-                    } else {
-                        // 最后一个
-                        if (_this.O.Hindex >= _this.O.HLiLength - 1) {
-                            _this.Hzoom(B, _this.O.Hindex, 0);
-                            break
-                        }
-                        // 第一个
-                        if (_this.O.Hindex <= 0) {
-                            _this.Hzoom(B, _this.O.Hindex, _this.O.Hindex + 1);
-                            break
-                        }
-                        //现在点击的比之前记录值大
-                        if(_this.O.Hindex > B){
-                            _this.Hzoom(B, _this.O.Hindex, _this.O.Hindex + 1);
-                            // debugger
-                            break
-                        }
-                        //其他所有
-                        _this.Hzoom(B, _this.O.Hindex, _this.O.Hindex - 1);
-                        // debugger
+                    if (_this.O.Hindex >= _this.O.HLiLength - 1) {
+                        _this.Hzoom(_this.O.Hindex - 1, _this.O.Hindex, 0);
+                        return false;
+
                     }
-
-
+                    _this.Hzoom(_this.O.Hindex - 1, _this.O.Hindex, _this.O.Hindex + 1);
                     break;
                 default:
                     console.log('圆点error');
                     break;
             }
-            B = _this.O.Hindex;
         });
     },
 
@@ -328,15 +293,29 @@ $.fn.extend({
 
         console.log(i, j, k);
         var _this = this;
-        this.O.HLi.eq(i).addClass("zoom").stop(true, true).fadeOut(700, function () {
-            // console.log(1111, $(this));
-            // console.log(1111,_this.O.HLi.eq(2).css('z-index'));
-            _this.O.HLi.removeClass().show();
-            _this.O.HLi.eq(j).addClass("topZindex").show();
-            _this.O.HLi.eq(k).addClass("secondZindex").show();
-            // console.log(2222,_this.O.HLi.eq(2).css('z-index'));
-        })
+        this.O.HLi.eq(i).addClass("zoomOutLeft");
+        /*  this.O.HLi.eq(j).addClass("topZindex").removeClass("secondZindex");
+         this.O.HLi.eq(k).removeClass("topZindex").addClass("secondZindex");
+         this.O.HLi.eq(i).removeClass();*/
+        setTimeout(function () {
+            _this.O.HLi.eq(j).addClass("topZindex").removeClass("secondZindex");
+            _this.O.HLi.eq(k).removeClass("topZindex").addClass("secondZindex");
+        }, 2000)
+        setTimeout(function () {
+            _this.O.HLi.eq(i).removeClass();
+        }, 3000)
 
+
+        /*
+         * .stop(true,true).fadeOut(700, function () {
+         // console.log(1111, $(this));
+         _this.O.HLi.removeClass();
+         // console.log(1111,_this.O.HLi.eq(2).css('z-index'));
+         _this.O.HLi.eq(j).addClass("topZindex").show();
+         _this.O.HLi.eq(k).addClass("secondZindex").show();
+         // console.log(2222,_this.O.HLi.eq(2).css('z-index'));
+         })
+         */
 
     },
 
