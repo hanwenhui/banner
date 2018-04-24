@@ -18,7 +18,7 @@
 $.fn.extend({
     O: {
         //索引值
-        "Hindex": 3,
+        "Hindex": 0,
         "HUl": "",
         "HLi": "",
         "HLiLength": "",
@@ -65,8 +65,8 @@ $.fn.extend({
         // 判断如果是zoom模式   修改ul的布局
         if (this.O.HslideType == "zoom") {
             this.O.HUl.addClass('ulNoRelative');
-            this.O.HLi.eq(3).addClass('topZindex');
-            this.O.HLi.eq(0).addClass('secondZindex');
+            this.O.HLi.eq(0).addClass('topZindex');
+            this.O.HLi.eq(1).addClass('secondZindex');
         } else {
             this.O.HUl.removeClass('ulNoRelative').addClass('ulRelative');
         }
@@ -104,7 +104,7 @@ $.fn.extend({
         }
 
         // 给第一个圆点添加 选中状态
-        this.Hcircle(3);
+        this.Hcircle(0);
 
         //圆点点击事件
         this.HcircleEvent()
@@ -152,21 +152,23 @@ $.fn.extend({
                 this.Hscroll(this.O.Hindex);
                 break;
             case 'zoom':
-                console.log('-----------', this.O.Hindex);
+                // console.log('-----------', this.O.Hindex);
                 var zoomIndex = (this.O.Hindex) % 4;
                 this.O.Hindex = zoomIndex;
-                console.log("ccc", this.O.Hindex);
-                console.log("dddd", zoomIndex);
+
                 if (zoomIndex === -1) {
                     this.O.Hindex = this.O.HLiLength - 1;
                     this.Hzoom(0, this.O.HLiLength - 1, this.O.HLiLength - 2);
                     break;
                 }
                 if (zoomIndex === 0) {
-                    console.log(zoomIndex + 1, zoomIndex, this.O.HLiLength - 1);
+                    console.log('上一张等于0的情况',zoomIndex + 1, zoomIndex, this.O.HLiLength - 1);
+                    this.Hzoom(zoomIndex + 1, zoomIndex, this.O.HLiLength - 1);
                     break;
                 }
                 this.Hzoom(zoomIndex + 1, zoomIndex, zoomIndex - 1);
+                console.log("上一张  this.O.Hindex", this.O.Hindex);
+                console.log("上一张  zoomIndex", zoomIndex);
                 break;
             default:
                 console.log('上一张error');
@@ -233,8 +235,11 @@ $.fn.extend({
         console.log(99999999999,B)
         circle.click(function () {
             _this.HclearTimer();
-            _this.Hcircle($(this).index());
+            // _this.Hcircle($(this).index());
             _this.O.Hindex = $(this).index();
+            // 获取有topZindex的li的索引
+            B = $('.pic ul li.topZindex').index();
+            console.log('CCCCCCCCCCCC',B);
             switch (_this.O.HslideType) {
                 case 'fade':
                     _this.Hfade(_this.O.Hindex);
@@ -244,7 +249,10 @@ $.fn.extend({
                     break;
                 case 'zoom':
                     //如果当前点击与之前记录相等  代表连续
+
+                    console.log('BBBBBBBBBBBBB',B);
                     if (_this.O.Hindex - 1 === B) {
+                        console.log('连续');
                         // 最后一个
                         if (_this.O.Hindex >= _this.O.HLiLength - 1) {
                             _this.Hzoom(_this.O.Hindex - 1, _this.O.Hindex, 0);
@@ -259,6 +267,7 @@ $.fn.extend({
                         _this.Hzoom(_this.O.Hindex - 1, _this.O.Hindex, _this.O.Hindex + 1);
 // debugger
                     } else {
+                        console.log('不连续');
                         // 最后一个
                         if (_this.O.Hindex >= _this.O.HLiLength - 1) {
                             _this.Hzoom(B, _this.O.Hindex, 0);
@@ -281,13 +290,17 @@ $.fn.extend({
                     }
 
 
+
                     break;
                 default:
                     console.log('圆点error');
                     break;
             }
-            B = _this.O.Hindex;
+            _this.Hcircle($(this).index())
+
+
         });
+
     },
 
     //淡入淡出  样式
